@@ -14,7 +14,7 @@ Very easy, just two steps:
 2. Download the .jar of the app, usernameList-web-1.0.jar (avaliable on build/libs) to a folder in your machine
 
 ##To run
-Just execute the downladed jar in the folder using this line: ´java -jar usernameList-web-1.0.jar´
+Just execute the downladed jar in the folder using this line: `java -jar usernameList-web-1.0.jar`
 
 ######Source code
 You also could execute the project with the source code provided using Gradle script included
