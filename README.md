@@ -1,11 +1,11 @@
-# usernamelist
-Aplication developed with Java and Spring to check a new username according to some rules. 
-Includes also a filter to avoid some restricted words (can be added using app).
+# Username List App
+Aplication developed with Java and Spring to check a new Username according to some rules. 
+Includes also a filter to avoid some restricted words (can be added new restricted words using app).
 
 ##Prerrequisites
 To install application, you need:
--Java 1.8
--MySQL 5.5 or above
+- Java 1.8
+- MySQL 5.5 or above
 
 ##Installation
 Very easy, just two steps:
