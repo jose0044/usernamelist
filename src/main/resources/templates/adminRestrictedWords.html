@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Username List program</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<form action="adminRestrictedWords.html"
+		th:action="@{/showAdminRestrictedWords}" th:object="${restrictedWord}"
+		method="post">
+
+		<div>
+			<p style="font-size: 2em; font-weight: bold;">Welcome to
+				administrator of Restricted Words</p>
+			<p>To use, simply type restricted word in the next form and next,
+				click the button to add.</p>
+		</div>
+
+		<label>Restricted Word:</label> <input type="text" th:field="*{word}"
+			maxlength="20" />
+		<div class="submit">
+			<button type="submit" name="showAdminRestrictedWords">Click
+				to add word</button>
+		</div>
+		<div>
+			<p th:text="${resultProcess}" />
+		</div>
+	</form>
+	<div th:unless="${#lists.isEmpty(allRestrictedWords)}">
+
+		<h2>List of Restricted Words created</h2>
+
+		<table style="border: 1px;">
+			<thead>
+				<tr>
+					<th>Word</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="rw : ${allRestrictedWords}">
+					<td th:text="${{rw.word}}"></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+	<form action="welcome.html" method="post">
+		<div>
+			<button type="submit" name="returnToWelcomePage">Return to
+				home</button>
+		</div>
+	</form>
+</body>
+</html>

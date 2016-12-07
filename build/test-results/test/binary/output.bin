@@ -1,0 +1,5 @@
+-23:42:54.782 [Test worker] ERROR ROOT - null
+P23:42:54.785 [Test worker] ERROR ROOT - [Ljava.lang.StackTraceElement;@4967b3e5
+P23:42:54.790 [Test worker] ERROR ROOT - [Ljava.lang.StackTraceElement;@1bf7ee99
+
+P23:42:54.793 [Test worker] ERROR ROOT - [Ljava.lang.StackTraceElement;@7e99fc64

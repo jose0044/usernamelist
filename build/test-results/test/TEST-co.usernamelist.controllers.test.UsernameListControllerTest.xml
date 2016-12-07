@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.usernamelist.controllers.test.UsernameListControllerTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2016-12-07T04:42:54" hostname="debian" time="0.09">
+  <properties/>
+  <testcase name="testValidateUsername [pabuse, false]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.021"/>
+  <testcase name="testValidateUsername [alBert, false]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.058"/>
+  <testcase name="testValidateUsername [albert2, true]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.0"/>
+  <testcase name="testValidateUsername [pjlouie,true]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.0"/>
+  <testcase name="testValidateUsername [lou,false]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.001"/>
+  <testcase name="testValidateUsername [marclt,true]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.001"/>
+  <testcase name="testValidateUsername [apruiz,false]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.001"/>
+  <testcase name="testValidateUsername [macbridge,true]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.001"/>
+  <testcase name="testValidateUsername [etwoods,false]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.0"/>
+  <testcase name="testValidateUsername [gbjeff,true]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.0"/>
+  <testcase name="testValidateUsername [bill,false]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.0"/>
+  <testcase name="testValidateUsername [mjokovich,true]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.0"/>
+  <testcase name="testValidateUsername [bart,false]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.0"/>
+  <testcase name="testValidateUsername [spooner,true]" classname="co.usernamelist.controllers.test.UsernameListControllerTest" time="0.0"/>
+  <system-out><![CDATA[23:42:54.782 [Test worker] ERROR ROOT - null
+23:42:54.785 [Test worker] ERROR ROOT - [Ljava.lang.StackTraceElement;@4967b3e5
+23:42:54.790 [Test worker] ERROR ROOT - [Ljava.lang.StackTraceElement;@1bf7ee99
+23:42:54.793 [Test worker] ERROR ROOT - [Ljava.lang.StackTraceElement;@7e99fc64
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

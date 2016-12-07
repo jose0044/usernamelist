@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Username List program</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<form action="welcome.html" th:action="@{/validateUsername}"
+		th:object="${username}" method="post">
+
+		<div>
+			<p style="font-size: 2em; font-weight: bold;">Welcome to Username
+				validator program!</p>
+			<p>To use, simply type your desired Username in the form (more of
+				six alphanumeric characters), next, click the button to validate the
+				username.</p>
+		</div>
+
+		<label>Username:</label> <input type="text" th:field="*{text}"
+			maxlength="20" />
+		<div>
+			<button type="submit" name="validateUsername">Check Username</button>
+		</div>
+		<div>
+			<p th:text="${resultProcess}" />
+		</div>
+
+		<div th:unless="${#lists.isEmpty(suggestedNewUsernames)}">
+
+			<h2>List of Suggested Usernames</h2>
+
+			<table style="border: 1px;">
+				<thead>
+					<tr>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="su : ${suggestedNewUsernames}">
+						<td th:text="${{su.text}}"></td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+
+	</form>
+	<form action="adminRestrictedWords.html" method="post">
+		<div>
+			<p style="font-weight: bold;">Advanced: Click in the next button
+				to go to administrate list of restricted words</p>
+		</div>
+		<div>
+			<button type="submit" name="sentToAdminRestrictedWords">View
+				Restricted Words</button>
+		</div>
+	</form>
+</body>
+</html>
